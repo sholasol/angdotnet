@@ -51,6 +51,8 @@ a:hover {
     color: red;
 }
 
+
+
 input[type='text'],
 input[type='password']{
     border: none;
@@ -86,3 +88,8 @@ img {
     background-color: #fff;
     padding: 0 8px;
 }
+
+.homebtn{
+    text-decoration: none;
+}
+
