@@ -1,4 +1,28 @@
 ﻿<Properties StartupConfiguration="{4AE17556-0A99-472A-9088-DC995D69DC61}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AngularAuthAPI/Controllers/UserController.cs">
+    <Files>
+      <File FileName="AngularAuthAPI/Program.cs" Line="56" Column="52" />
+      <File FileName="AngularAuthAPI/Controllers/UserController.cs" Line="52" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AngularAuthAPI" expanded="True">
+            <Node name="AngularAuthAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AngularAuthAPI FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.AngularAuthAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
