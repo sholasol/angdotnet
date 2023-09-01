@@ -1,22 +1,32 @@
 ﻿<Properties StartupConfiguration="{4AE17556-0A99-472A-9088-DC995D69DC61}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AngularAuthAPI/Controllers/UserController.cs">
+  <MonoDevelop.Ide.ItemProperties.AngularAuthAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AngularAuthAPI/Program.cs">
     <Files>
-      <File FileName="AngularAuthAPI/Program.cs" />
+      <File FileName="AngularAuthAPI/Program.cs" Line="1" Column="1" />
       <File FileName="AngularAuthAPI/Controllers/UserController.cs" Line="112" Column="10" />
+      <File FileName="AngularAuthAPI/appsettings.Development.json" Line="10" Column="93" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="AngularAuthAPI" expanded="True" selected="True" />
+          <Node name="AngularAuthAPI" expanded="True">
+            <Node name="AngularAuthAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AngularAuthAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
