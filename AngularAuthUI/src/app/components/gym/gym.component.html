@@ -1,0 +1,248 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/gym">Join Gym</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login"><i class="fa fa-lock text-primary"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/signup"><i class="fa fa-user text-primary"></i></a>
+                </li>
+            </ul> 
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <main>
+
+      <div class="bg-body-tertiary p-5 rounded">
+        <h1>Navbar example</h1>
+        <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
+      </div>
+  
+      <div class="row g-5">
+       
+        <div class="offset-md-2 col-md-8 offset-md-2">
+          <h4 class="mb-3">Billing address</h4>
+          <form [formGroup]="gymForm" >
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-user p-2"></span>
+                      <input 
+                        formControlName="firstName"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                    </div>
+                  </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-user p-2"></span>
+                      <input 
+                        formControlName="lastName"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-user p-2"></span>
+                      <input 
+                        formControlName="email"
+                        type="text"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-phone p-2"></span>
+                      <input 
+                        formControlName="phone"
+                        type="text"
+                        placeholder="Mobile"
+                      />
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-sort p-2"></span>
+                      <input 
+                        formControlName="weight"
+                        type="number"
+                        placeholder="weight"
+                      />
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-sort p-2"></span>
+                      <input 
+                      [readonly]="!this.gymForm.value?.weight"
+                        formControlName="height"
+                        type="number"
+                        placeholder="height"
+                      />
+                    </div>
+                  </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-sort p-2"></span>
+                      <input 
+                        formControlName="bmi"
+                        type="number"
+                        placeholder="BMI"
+                        readonly
+                      />
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group pt-3" >
+                    <div class="input-field">
+                      <span class="fa fa-sort p-2"></span>
+                      <input 
+                        formControlName="bmiresult"
+                        type="text"
+                        placeholder="BMI Result"
+                        readonly
+                      />
+                    </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="country" class="form-label">Package</label>
+                <select class="form-select" id="country" formControlName="package">
+                  <option value="">Package...</option> 
+                  <option *ngFor="let package of packages" [value]="package">{{package}}</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a Package.
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="state" class="form-label">What is Important</label>
+                <select class="form-select" id="state"  formControlName="important">
+                  <option value="">Whis is important...</option>
+                  <option *ngFor="let important of importants" [value]="important">
+                    {{important}}
+                  </option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="state" class="form-label">New to Gym</label>
+                <select class="form-select" id="state"  formControlName="newgym" >
+                  <option value="">Please select...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group pt-4" >
+                    <div class="input-field">
+                      <span class="fa fa-calendar p-2"></span>
+                      <input 
+                        formControlName="regdate"
+                        type="date"
+                        placeholder="BMI Result"
+                      />
+                    </div>
+                  </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="my-3">
+                        <h4 class="mb-3">Select Your Gender</h4>
+                        <div class="form-check">
+                            <input id="credit" value="male" name="gender" formControlName="gender" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" value="female" name="gender" formControlName="gender" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="my-3">
+                        <h4 class="mb-3">Require Trainer</h4>
+                        <div class="form-check">
+                            <input id="credit" value="yes" name="trainer" formControlName="trainer" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" value="no" name="trainer" formControlName="trainer" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+  
+            <button (click)="onsubmitGym()" class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+      <p class="mb-1">&copy; 2017–2023 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+
